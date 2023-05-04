@@ -2,7 +2,7 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 $(function () {
-    var today = new Date()
+    var today = new Date();
     var currentHour = today.getHours()
     console.log(currentHour)
     for(var i=9; i < 19; i++){
@@ -43,6 +43,8 @@ $(function () {
     // attribute of each time-block be used to do this?
     //
     // TODO: Add code to display the current date in the header of the page.
-    // const currentTime = moment();
-    // currentTime = currentTime.startOf("hour");
+    var now = dayjs("Thursday 2023-05-04").format("dddd, MMM D, YYYY")
+    $("#1a").text(now);
+
 });
+
